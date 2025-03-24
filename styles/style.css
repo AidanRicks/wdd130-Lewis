@@ -1,3 +1,31 @@
+:root{
+--heading-font: Oswald, Arial, sans-serif;
+--paragraph-font: Lato, Helvetica, sans-serif;
+}
+h1, h2, h3 {
+    font-family: var(--heading-font);
+    color: #2C3E50;
+}
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 2fr 3fr;
+    justify-items: center;
+    gap: 1em;
+}
+gear_reviews {
+    width: 50%;
+    height: auto;
+    background-color: green;
+    grid-column: 1/1;
+}
+safty/training {
+    width: 50%;
+    height: auto;
+    background-color: red;
+    grid-column: 2/2;
+}
+
 body {
     background: blue;
 }
