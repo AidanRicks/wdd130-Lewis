@@ -11,9 +11,7 @@ p {
     font-family: var(--paragraph-font);
     
 }
-body{
 
-}
 header {
     display: grid;
     grid-template-columns: 100px 1fr;
