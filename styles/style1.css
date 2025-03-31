@@ -92,11 +92,23 @@ a {
 }
 footer {
     display: flex;
-    justify-content: space-around;
+    flex-wrap: wrap; /* Allow items to wrap to the next row */
+    align-items: left; /* Align items vertically */
     background-color: #F39C12;
-    color:#2C3E50;
+    color: #2C3E50;
     margin-top: -50px;
 }
+footer h2 {
+    margin:20px 50px;
+}
 footer p {
-    justify-content: flex-start;
+    flex-basis: 100%; /* Make the paragraph take up the full width */
+    text-align: left; /* Align the text to the left */
+    margin: 10px 50px; /* Remove extra margin for proper alignment */
+}
+
+.social a img {
+    width: 50px; /* Adjust the size of the images */
+    height: auto; /* Maintain aspect ratio */
+    margin: 10px 50px; /* Adjust the spacing between the images */
 }
