@@ -88,25 +88,168 @@ a {
     text-decoration: none;
     color: white;
 }
-footer {
-    display: flex;
-    flex-wrap: wrap; /* Allow items to wrap to the next row */
-    align-items: left; /* Align items vertically */
-    background-color: #F39C12;
-    color: #2C3E50;
-    margin-top: -50px;
-}
-footer h2 {
-    margin:20px 50px;
-}
-footer p {
-    flex-basis: 100%; /* Make the paragraph take up the full width */
-    text-align: left; /* Align the text to the left */
-    margin: 10px 50px; /* Remove extra margin for proper alignment */
-}
-
 .social a img {
     width: 50px; /* Adjust the size of the images */
     height: auto; /* Maintain aspect ratio */
     margin: 10px 50px; /* Adjust the spacing between the images */
+}
+
+.main_grid {
+  display: grid;
+  grid-template-columns: 300px, 1fr;
+  grid-template-rows: 30px, 1fr;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  margin-top: 25px;
+  height: 400px;
+  column-gap: 35px;
+  margin-bottom: 25px;
+}
+
+.title_1 {
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+  justify-self: start;
+}
+
+.tips {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+}
+
+.s_img {
+  grid-column: 1 / 2;
+  grid-row: 1 / 3;
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  object-position: top;
+}
+
+.second_grid {
+  background-color: #f0f0f0;
+  display: grid;
+  grid-template-columns: 1fr 400px;
+  grid-template-rows: 30px, 1fr;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  margin-top: 50px;
+  height: 600px;
+  border-top: solid 2px #2C3E50;
+  border-bottom: solid 2px #2C3E50;
+}
+
+.title_2 {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+  justify-self: start;
+  margin-left: 60px;
+}
+
+.cc_img {
+  grid-column: 2 / 3;
+  grid-row: 1 / 3;
+  width: 400px;
+  height: 580px;
+  object-fit: cover;
+  object-position: top;
+  margin-right: 60px;
+}
+
+.third_grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 20px 300px, 50px;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  margin-top: 50px;
+  margin-bottom: 175px;
+  height: 370px;
+  gap: 10px;
+}
+
+.title_3 {
+  grid-column: 1 / 4;
+  grid-row: 1 / 2;
+}
+
+.vid {
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+  width: 400px;
+  height: 300px;
+  object-fit: cover;
+  object-position: top;
+  border: solid 6px #2C3E50;
+}
+
+.art {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+  width: 400px;
+  height: 300px;
+  object-fit: cover;
+  object-position: top;
+  border: solid 6px #2C3E50;
+}
+
+.hot {
+  grid-column: 3 / 4;
+  grid-row: 2 / 3;
+  width: 400px;
+  height: 300px;
+  object-fit: cover;
+  object-position: top;
+  border: solid 6px #2C3E50;
+}
+
+.links {
+  grid-column: 1 / 4;
+  grid-row: 3 / 4;
+  color: #2C3E50;
+  text-decoration: underline;
+  display: grid;
+  text-align: center;
+  padding-top: 15px;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  width: 100%;
+  gap: 0%;
+  justify-content: center;
+}
+
+.grid_container a {
+  text-align: center;
+}
+
+.links:visited {
+  grid-column: 1 / 4;
+  grid-row: 3 / 4;
+  color: #2C3E50;
+  text-decoration: underline;
+}
+
+.links a {
+  color: #2C3E50;
+}
+
+footer {
+  display: flex;
+  flex-wrap: wrap; /* Allow items to wrap to the next row */
+  align-items: left; /* Align items vertically */
+  background-color: #F39C12;
+  color: #2C3E50;
+  margin-top: -50px;
+}
+
+footer h2 {
+  margin:20px 50px;
+}
+
+footer p {
+  flex-basis: 100%; /* Make the paragraph take up the full width */
+  text-align: left; /* Align the text to the left */
+  margin: 10px 50px; /* Remove extra margin for proper alignment */
 }
